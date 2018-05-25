@@ -76,7 +76,7 @@
             android:id="@+id/btn_3"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="3"
+            android:text="31"
             android:textSize="35sp"
             android:layout_alignParentRight="true"
             android:background="@drawable/shape_circle"
