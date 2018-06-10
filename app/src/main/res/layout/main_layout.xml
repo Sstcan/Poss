@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,16 +8,18 @@
     android:orientation="vertical"
     tools:context="com.example.shishengtao.poss.MainActivity">
 
+
     <LinearLayout
         android:id="@+id/linearlayout_1"
-        android:layout_width="fill_parent"
+        android:layout_width="400dp"
         android:layout_height="45dp"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="15dp"
         android:background="@drawable/backgroud_white"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintLeft_toRightOf="parent"
-        android:layout_marginLeft="15dp"
         app:layout_constraintRight_toLeftOf="parent"
+
         >
 
 
@@ -24,191 +27,259 @@
             android:id="@+id/textview_1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Amount"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:textColor="#000000"
-            android:textSize="25sp"
-            />
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/ET_1"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            android:layout_weight="6"
-          android:background="@drawable/backgroud_main"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@drawable/backgroud_main"
+
+            android:gravity="end"
             android:hint="0.00"
-            android:layout_marginTop="5dp"/>
+            android:paddingRight="7dp"
+
+            />
 
 
     </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/RL_1"
-        app:layout_constraintTop_toBottomOf="@+id/linearlayout_1"
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="parent"
         android:layout_marginLeft="40dp"
-        app:layout_constraintRight_toLeftOf="parent"
         android:layout_marginRight="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout_1">
+
         <Button
             android:id="@+id/btn_1"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="1"
-            android:textSize="35sp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="1"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_2"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="2"
-            android:textSize="35sp"
             android:layout_centerInParent="true"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="2"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_3"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="31"
-            android:textSize="35sp"
             android:layout_alignParentRight="true"
+
             android:background="@drawable/shape_circle"
-            />
+            android:text="3"
+            android:textSize="30sp" />
 
 
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/RL_2"
-        app:layout_constraintTop_toBottomOf="@+id/RL_1"
-        android:layout_marginTop="7dp"
-        android:layout_width="fill_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginEnd="40dp"
         android:layout_marginLeft="40dp"
-        app:layout_constraintRight_toLeftOf="parent"
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginTop="7dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RL_1">
 
         <Button
             android:id="@+id/btn_4"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="4"
-            android:textSize="35sp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="4"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn_5"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="5"
-            android:textSize="35sp"
             android:layout_centerInParent="true"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="5"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn_6"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="6"
-            android:textSize="35sp"
             android:layout_alignParentRight="true"
-           android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="6"
+            android:textSize="35sp" />
 
 
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/RL_3"
-        app:layout_constraintTop_toBottomOf="@+id/RL_2"
-        android:layout_marginTop="7dp"
-        android:layout_width="fill_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginEnd="40dp"
         android:layout_marginLeft="40dp"
-        app:layout_constraintRight_toLeftOf="parent"
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginTop="7dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RL_2">
 
         <Button
             android:id="@+id/btn_7"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="7"
-            android:textSize="35sp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="7"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn_8"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="8"
-            android:textSize="35sp"
             android:layout_centerInParent="true"
             android:background="@drawable/shape_circle"
-            />
+            android:text="8"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn_9"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="9"
-            android:textSize="35sp"
             android:layout_alignParentRight="true"
             android:background="@drawable/shape_circle"
-            />
+            android:text="9"
+            android:textSize="35sp" />
 
 
     </RelativeLayout>
+
     <RelativeLayout
-        app:layout_constraintTop_toBottomOf="@+id/RL_3"
-        android:layout_marginTop="7dp"
-        android:layout_width="fill_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginEnd="40dp"
         android:layout_marginLeft="40dp"
-        app:layout_constraintRight_toLeftOf="parent"
         android:layout_marginRight="40dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginTop="7dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RL_3">
 
         <Button
             android:id="@+id/btn_00"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="00"
-            android:textSize="35sp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/shape_circle"/>
+            android:background="@drawable/shape_circle"
+            android:text="00"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn_0"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="0"
-            android:textSize="35sp"
             android:layout_centerInParent="true"
             android:background="@drawable/shape_circle"
-            />
+            android:text="0"
+            android:textSize="35sp" />
+
         <Button
             android:id="@+id/btn"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:text="<"
-            android:textSize="35sp"
             android:layout_alignParentRight="true"
             android:background="@drawable/shape_circle"
-            />
-
-
+            android:text="@string/tuige"
+            android:textSize="35sp" />
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/Linearlayout_2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+       android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
 
+        >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sale"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Record"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="MerChat"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+
+            android:text="More"
+            android:textSize="25sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/Linearlayout_2"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/halfcircle"
+            android:text="ok"
+            android:textSize="40sp" />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
